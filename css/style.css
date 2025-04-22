@@ -100,7 +100,8 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 600px) {
+/* Celulares (dispositivos pequeños: 320px a 480px)*/
+@media screen and (max-width: 480px) {
     .acerca{
         display: flex;
         justify-content: center;
@@ -110,7 +111,7 @@ footer{
         padding: 0;
     }
 
-    .acerca p{
+    .acerca p {
         font-size: 12.5px;
     }
 
@@ -136,7 +137,30 @@ footer{
         text-align: center;
         font-size: 12.5px;
     }
-    
 }
+
+/* Estilos para smartphones grandes o phablets */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .acerca{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .acerca{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+  }
 
 
