@@ -150,6 +150,25 @@ footer{
         padding: 0;
     }
 
+    .acerca p {
+        font-size: 12.5px;
+    }
+
+    .acerca__articulo__btnContactame{
+        font-size: 12.5px;
+        color: white;
+        background-color:#183B4E;
+        border-radius: 15px;
+        width: 80px;
+    }
+    
+    
+    .acerca__imagenUsuario{
+    width: 0%;
+    text-align: center;
+    }
+    
+
   }
 
   @media screen and (min-width: 768px) and (max-width: 1024px) {
