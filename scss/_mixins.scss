@@ -1,0 +1,17 @@
+//mixin pagina de inicio
+@mixin flex-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// Botón base
+@mixin boton-estandar($bg-color, $text-color, $width: $btn-width) {
+  font-size: $font-size-small;
+  color: $text-color;
+  background-color: $bg-color;
+  border-radius: $btn-border-radius;
+  width: $width;
+}

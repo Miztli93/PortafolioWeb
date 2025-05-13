@@ -1,0 +1,233 @@
+/* fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Reset html */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.m-bg-color {
+    background-color: #183B4E;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 17px;
+}
+
+.nav-link {
+    color: white;
+    font-size: 15px;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.presentacion-span {
+    font-size: 25px;
+}
+
+.presentacion-parrafo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.socialMedia {
+    text-align: center;
+}
+
+.soscialMedia__imagen {
+    width: 25px;
+    height: 25px;
+}
+
+.acerca {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: end;
+    gap: 0;
+    margin-left: 60px;
+
+}
+
+.acerca p {
+    font-size: 25px;
+}
+
+.acerca__articulo__parrafo {
+    display: flex;
+    flex-direction: column;
+}
+
+.acerca__articulo__btnContactame {
+    font-size: 25px;
+    color: white;
+    background-color: #183B4E;
+    border-radius: 15px;
+    width: 155px;
+}
+
+
+.acerca__imagenUsuario {
+    width: 50%;
+    text-align: center;
+}
+
+/* Habilidades */
+.habilidadesTitulo{
+    text-align: center;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.bm__habilidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.bm__imagen{
+    width: 25%;
+}
+
+.bm__habilidades__card{
+    align-items: center;
+}
+
+
+footer {
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Celulares (dispositivos pequeños: 320px a 480px)*/
+@media screen and (max-width: 480px) {
+    .acerca {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .acerca p {
+        font-size: 12.5px;
+    }
+
+    .acerca__articulo__btnContactame {
+        font-size: 12.5px;
+        color: white;
+        background-color: #183B4E;
+        border-radius: 15px;
+        width: 80px;
+    }
+
+
+    .acerca__imagenUsuario {
+        width: 60%;
+        text-align: center;
+    }
+
+
+
+    footer {
+
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 12.5px;
+    }
+}
+
+/* Estilos para smartphones grandes o phablets */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .acerca {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .acerca p {
+        font-size: 12.5px;
+    }
+
+    .acerca__articulo__btnContactame {
+        font-size: 12.5px;
+        color: white;
+        background-color: #183B4E;
+        border-radius: 15px;
+        width: 80px;
+        margin-bottom: 25px;
+    }
+
+
+    .acerca__imagenUsuario {
+        width: 0%;
+        text-align: center;
+    }
+
+
+    footer {
+
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 12.5px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .acerca {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .acerca p {
+        font-size: 12.5px;
+    }
+
+    .acerca__articulo__btnContactame {
+        font-size: 12.5px;
+        color: white;
+        background-color: #183B4E;
+        border-radius: 15px;
+        width: 80px;
+    }
+}

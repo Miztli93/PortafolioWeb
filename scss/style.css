@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: black;
+  color: #F2F2F2;
+  text-align: center;
+}
+
+.m-bg-color {
+  background-color: #183B4E;
+}
+
+.navbar .navbar-brand {
+  color: #F2F2F2;
+  font-size: 17px;
+}
+.navbar .nav-link {
+  color: #F2F2F2;
+  font-size: 15px;
+}
+.navbar a:hover {
+  color: red;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inicio .presentacion-span {
+  font-size: 25px;
+}
+.inicio .presentacion-parrafo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.socialMedia {
+  text-align: center;
+}
+
+.socialMedia img {
+  width: 25px;
+  height: 25px;
+}
+
+.acerca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: end;
+  gap: 0;
+  margin-left: 60px;
+}
+.acerca p {
+  font-size: 25px;
+}
+.acerca__articulo__parrafo {
+  display: flex;
+  flex-direction: column;
+}
+.acerca__articulo__btnContactame {
+  font-size: 25px;
+  color: #F2F2F2;
+  background-color: #183B4E;
+  border-radius: 15px;
+  width: 155px;
+}
+.acerca__imagenUsuario {
+  width: 50%;
+  text-align: center;
+}
+
+.bm__habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.bm__habilidades__card {
+  align-items: center;
+  width: 18rem;
+  margin: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.bm__habilidades__card:hover {
+  transform: scale(1.03);
+}
+.bm__habilidades__card .card-body {
+  padding: 1rem;
+}
+.bm__habilidades__card .card-body .card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.bm__habilidades__card .card-body .card-text {
+  font-size: 0.9rem;
+}
+.bm__habilidades .bm__imagen {
+  width: 25%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.habilidadesTitulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 480px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .acerca p {
+    font-size: 12.5px;
+  }
+  .acerca__articulo__btnContactame {
+    font-size: 12.5px;
+    width: 80px;
+  }
+  .acerca__imagenUsuario {
+    width: 60%;
+    text-align: center;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12.5px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .acerca p {
+    font-size: 12.5px;
+  }
+  .acerca__articulo__btnContactame {
+    font-size: 12.5px;
+    width: 80px;
+    margin-bottom: 25px;
+  }
+  .acerca__imagenUsuario {
+    width: 0%;
+    text-align: center;
+  }
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12.5px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .acerca p {
+    font-size: 12.5px;
+  }
+  .acerca__articulo__btnContactame {
+    font-size: 12.5px;
+    width: 80px;
+  }
+}/*# sourceMappingURL=style.css.map */

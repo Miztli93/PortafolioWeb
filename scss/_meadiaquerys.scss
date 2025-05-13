@@ -1,0 +1,84 @@
+@media screen and (max-width: 480px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    p {
+      font-size: 12.5px;
+    }
+
+    &__articulo__btnContactame {
+      font-size: 12.5px;
+      width: 80px;
+    }
+
+    &__imagenUsuario {
+      width: 60%;
+      text-align: center;
+    }
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    p {
+      font-size: 12.5px;
+    }
+
+    &__articulo__btnContactame {
+      font-size: 12.5px;
+      width: 80px;
+      margin-bottom: 25px;
+    }
+
+    &__imagenUsuario {
+      width: 0%;
+      text-align: center;
+    }
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12.5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .acerca {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    p {
+      font-size: 12.5px;
+    }
+
+    &__articulo__btnContactame {
+      font-size: 12.5px;
+      width: 80px;
+    }
+  }
+}

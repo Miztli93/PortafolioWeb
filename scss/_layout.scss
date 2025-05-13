@@ -1,0 +1,125 @@
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+  .navbar-brand {
+    color: $secondary-color;
+    font-size: 17px;
+  }
+
+  .nav-link {
+    color: $secondary-color;
+    font-size: 15px;
+  }
+
+  a:hover {
+    color: $quaternary-color;
+  }
+}
+
+
+// Pagina inicio
+.inicio {
+  @include flex-center();
+
+  .presentacion-span {
+    font-size: $font-size-small;
+  }
+
+  .presentacion-parrafo {
+    font-size: $font-size-large;
+    font-weight: bold;
+  }
+}
+
+.socialMedia {
+  text-align: center;
+}
+
+.socialMedia img{
+  width: $image-size-socialmedia;
+  height: $image-size-socialmedia;
+}
+
+//Pagina Acerca
+.acerca {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: end;
+  gap: 0;
+  margin-left: $margin-left;
+
+  p {
+    font-size: $font-size-small;
+  }
+
+  &__articulo {
+    &__parrafo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__btnContactame {
+      font-size: $font-size-small;
+      color: $secondary-color;
+      background-color: $primary-color;
+      border-radius: $btn-radius;
+      width: $btn-width;
+    }
+  }
+
+  &__imagenUsuario {
+    width: $img-width;
+    text-align: center;
+  }
+}
+
+//Pagina habilidades
+.bm__habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+  &__card {
+    align-items: center;
+    width: 18rem; // Ajustable según tu diseño
+    margin: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    .card-body {
+      padding: 1rem;
+
+      .card-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .bm__imagen {
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+}
+
+.habilidadesTitulo {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+//Pagina de contacto
